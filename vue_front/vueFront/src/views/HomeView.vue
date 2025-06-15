@@ -2,7 +2,7 @@
   <div id="app" class="container mx-auto p-6 font-sans">
     <h1 class="text-3xl font-bold mb-6">Organization Tree Manager</h1>
 
-    <!-- Formularz tworzenia drzewa -->
+
     <div class="mb-8 bg-gray-100 p-6 rounded-lg shadow">
       <h3 class="text-xl font-semibold mb-4">Create New Tree</h3>
       <input
@@ -24,7 +24,7 @@
       </button>
     </div>
 
-    <!-- Lista drzew -->
+
     <div>
       <h3 class="text-xl font-semibold mb-4">Trees</h3>
       <ul class="space-y-4">
@@ -73,7 +73,7 @@
               <div v-if="expandedSections[tree.id]?.remove" class="mt-2">
                 <input
                   v-model="removePath"
-                  placeholder="Node Path (e.g., /Root/Person[@id='1'])"
+                  placeholder="Node Path (e.g., /Person[@id='1'])"
                   class="w-full p-3 mb-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
                 <button
@@ -92,7 +92,7 @@
               <div v-if="expandedSections[tree.id]?.report" class="mt-2">
                 <input
                   v-model="reportPath"
-                  placeholder="XPath (e.g., /Root/Person[@id='1'])"
+                  placeholder="Node Path (e.g., /Person[@id='1'])"
                   class="w-full p-3 mb-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
                 <button
@@ -119,7 +119,7 @@
       </ul>
     </div>
 
-    <!-- Komunikaty -->
+
     <p v-if="message" class="mt-4 p-3 bg-green-100 text-green-700 rounded-lg">{{ message }}</p>
     <p v-if="error" class="mt-4 p-3 bg-red-100 text-red-700 rounded-lg">{{ error }}</p>
   </div>
@@ -304,7 +304,7 @@ const addNode = async (treeId) => {
       parentPath.value = ''
       await selectTree(treeId)
 
-      // 💡 wymuś aktualizację drzewa w liście
+
       const index = trees.value.findIndex((t) => t.id === treeId)
       if (index !== -1 && selectedTree.value) {
         trees.value[index] = { ...selectedTree.value }
@@ -338,7 +338,7 @@ const removeNode = async (treeId) => {
       parentPath.value = ''
       await selectTree(treeId)
 
-      // 💡 wymuś aktualizację drzewa w liście
+
       const index = trees.value.findIndex((t) => t.id === treeId)
       if (index !== -1 && selectedTree.value) {
         trees.value[index] = { ...selectedTree.value }
