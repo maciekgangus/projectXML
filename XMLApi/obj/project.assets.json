@@ -6600,11 +6600,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/maciek_gangus/Bazy2Danych/backend_dotnet/XMLApi/XMLApi.csproj",
+      "projectUniqueName": "/Users/maciek_gangus/Bazy2Danych/projectXML/XMLApi/XMLApi.csproj",
       "projectName": "XMLApi",
-      "projectPath": "/Users/maciek_gangus/Bazy2Danych/backend_dotnet/XMLApi/XMLApi.csproj",
+      "projectPath": "/Users/maciek_gangus/Bazy2Danych/projectXML/XMLApi/XMLApi.csproj",
       "packagesPath": "/Users/maciek_gangus/.nuget/packages/",
-      "outputPath": "/Users/maciek_gangus/Bazy2Danych/backend_dotnet/XMLApi/obj/",
+      "outputPath": "/Users/maciek_gangus/Bazy2Danych/projectXML/XMLApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/maciek_gangus/.nuget/NuGet/NuGet.Config"

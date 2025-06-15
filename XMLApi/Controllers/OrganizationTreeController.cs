@@ -70,7 +70,7 @@ public class OrganizationTreeController : ControllerBase
 
             XElement xmlData = XElement.Parse(xmlContent);
             var treeName = xmlData.Element("TreeName")?.Value ?? "Unnamed Tree";
-            var treeData = new XElement("Root", xmlData.Elements().Where(e => e.Name != "TreeName")).ToString(); // Convert to string for storage
+            var treeData = new XElement("Root", xmlData.Elements().Where(e => e.Name != "TreeName")).ToString(); 
 
             var tree = new OrganizationTree
             {
@@ -114,7 +114,7 @@ public class OrganizationTreeController : ControllerBase
             }
 
             XElement xmlData = XElement.Parse(xmlContent);
-            tree.TreeData = new XElement("Root", xmlData.Elements()).ToString(); // Update with new XML as string
+            tree.TreeData = new XElement("Root", xmlData.Elements()).ToString(); 
             _context.Entry(tree).State = EntityState.Modified;
             await _context.SaveChangesAsync();
             return NoContent();
@@ -250,7 +250,6 @@ public async Task<IActionResult> GenerateSubtreeReport(int id, [FromQuery] strin
     {
         XElement treeData = XElement.Parse(tree.TreeData ?? "<Root/>");
 
-        // Jeśli nie podano ścieżki, zwróć całe drzewo
         XElement? targetNode = string.IsNullOrWhiteSpace(path)
             ? treeData
             : treeData.XPathSelectElement(path);

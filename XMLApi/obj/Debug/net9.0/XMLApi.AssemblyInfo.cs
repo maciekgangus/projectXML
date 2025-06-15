@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XMLApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+391eba42159b2574c7022daf8b9da8a8e8407b91")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a6037d1f6651fef515cdc8eee84f83bb9960f40")]
 [assembly: System.Reflection.AssemblyProductAttribute("XMLApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XMLApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

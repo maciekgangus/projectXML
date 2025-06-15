@@ -19,7 +19,7 @@ public class OrganizationTreeContext : DbContext
         modelBuilder.Entity<OrganizationTree>(entity =>
         {
             entity.Property(e => e.TreeData)
-                  .HasColumnType("xml"); // Explicitly set column type
+                  .HasColumnType("xml"); 
         });
     }
 }
@@ -29,6 +29,6 @@ public class OrganizationTree
 {
     public int Id { get; set; }
     public string? TreeName { get; set; }
-    [Column(TypeName = "xml")] // Określa typ kolumny jako xml w SQL Server
-    public string? TreeData { get; set; } // Przechowujemy jako string, ale w bazie będzie xml
+    [Column(TypeName = "xml")] 
+    public string? TreeData { get; set; } 
 }

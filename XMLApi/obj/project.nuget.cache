@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0CisvTBGJ5c=",
+  "dgSpecHash": "4eu5cwzvF4o=",
   "success": true,
-  "projectFilePath": "/Users/maciek_gangus/Bazy2Danych/backend_dotnet/XMLApi/XMLApi.csproj",
+  "projectFilePath": "/Users/maciek_gangus/Bazy2Danych/projectXML/XMLApi/XMLApi.csproj",
   "expectedPackageFiles": [
     "/Users/maciek_gangus/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/maciek_gangus/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
